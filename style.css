@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;             /* deixa os elementos lado a lado */
+    justify-content: center;   /* justifica tudo no eixo X */
+    align-items: center;       /* justifica tudo no eixo Y */
+}
+
+.esquerda-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;            /* deixa os elementos lado a lado */
+    justify-content: center;  /* justifica tudo no eixo X */
+    align-items: center;      /* justifica tudo no eixo Y */
+    flex-direction: column;   /* fica um embaixo do outro */
+}
+
+.esquerda-login > h1 {
+    font-size: 3vw;
+    color: #0029FF;
+}
+
+.imagem-esquerda {
+    width: 35vw;
+}
+
+.direita-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.348);
+}
+
+.card-login > h1 {
+    color: #0029FF;
+    font-weight: 800px;
+    margin: 0px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column; /* quando eu uso flexdirection o eixo Y vira justifycontent e o eixo X vira alingitems */
+    align-items: flex-start;
+    justify-content: center;
+    margin: 8px 0px;
+}
+
+.texto > input {
+    width: 290px;
+    height: 20px;
+    border-radius: 50px;
+    padding: 11px;
+    background: white;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.348);
+    
+}
+
+.texto > label {
+    color: black;
+    margin: 8px;
+}
+
+.texto > input::placeholder{
+    color: gray;
+}
+
+.btn-login{
+    width: 100px;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: #0029FF;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #0029FF;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .esquerda-login > h1{
+        display: none;
+    }
+    .esquerda-login{
+        width: 100%;
+        height: auto;
+    }
+    .direita-login{
+        width: 100%;
+        height: auto;
+    }
+    .imagem-esquerda{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
