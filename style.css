@@ -12,7 +12,7 @@ body * {
 .main-login {
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background: white;
     display: flex;             /* deixa os elementos lado a lado */
     justify-content: center;   /* justifica tudo no eixo X */
     align-items: center;       /* justifica tudo no eixo Y */
@@ -46,7 +46,6 @@ body * {
 
 .card-login {
     width: 60%;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,38 +53,38 @@ body * {
     padding: 30px 35px;
     background: white;
     border-radius: 20px;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.348);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.348); 
 }
 
 .card-login > h1 {
     color: #0029FF;
-    font-weight: 800px;
+    font-weight: 800;
     margin: 0px;
 }
 
 .texto {
+    width: 100%;
     display: flex;
     flex-direction: column; /* quando eu uso flexdirection o eixo Y vira justifycontent e o eixo X vira alingitems */
     align-items: flex-start;
     justify-content: center;
-    margin: 8px 0px;
+    margin: 10px 0px;
 }
 
 .texto > input {
-    width: 290px;
-    height: 20px;
-    border-radius: 50px;
-    padding: 11px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
     background: white;
     color: white;
-    font-size: 12pt;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.348);
+    outline: none;
+    box-sizing: border-box;
     
 }
 
 .texto > label {
     color: black;
-    margin: 8px;
+    margin: 10px;
 }
 
 .texto > input::placeholder{
@@ -93,16 +92,17 @@ body * {
 }
 
 .btn-login{
-    width: 100px;
+    width: 100%;
     padding: 16px 0px;
     margin: 25px;
     border: none;
-    border-radius: 50px;
-    background-color: #0029FF;
+    border-radius: 15px;
+    outline: none;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 2px;
     color: white;
+    background-color: #0029FF;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #0029FF;
 }
